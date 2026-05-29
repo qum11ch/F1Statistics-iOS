@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		05DBCACF2FC87A64007B30E3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 05DBCACE2FC87A64007B30E3 /* FirebaseCore */; };
+		05DBCAD12FC87A64007B30E3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 05DBCAD02FC87A64007B30E3 /* FirebaseDatabase */; };
+		05DBCAD32FC87A64007B30E3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 05DBCAD22FC87A64007B30E3 /* FirebaseStorage */; };
+		05DBCADE2FC8805A007B30E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 05DBCADD2FC8805A007B30E3 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		05DBCA902FC84F11007B30E3 /* F1Statistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1Statistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05DBCADE2FC8805A007B30E3 /* Kingfisher in Frameworks */,
+				05DBCAD12FC87A64007B30E3 /* FirebaseDatabase in Frameworks */,
+				05DBCACF2FC87A64007B30E3 /* FirebaseCore in Frameworks */,
+				05DBCAD32FC87A64007B30E3 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,10 @@
 			);
 			name = F1Statistics;
 			packageProductDependencies = (
+				05DBCACE2FC87A64007B30E3 /* FirebaseCore */,
+				05DBCAD02FC87A64007B30E3 /* FirebaseDatabase */,
+				05DBCAD22FC87A64007B30E3 /* FirebaseStorage */,
+				05DBCADD2FC8805A007B30E3 /* Kingfisher */,
 			);
 			productName = F1Statistics;
 			productReference = 05DBCA902FC84F11007B30E3 /* F1Statistics.app */;
@@ -107,6 +122,10 @@
 			);
 			mainGroup = 05DBCA872FC84F11007B30E3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				05DBCACD2FC87A64007B30E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				05DBCADC2FC8805A007B30E3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 05DBCA912FC84F11007B30E3 /* Products */;
 			projectDirPath = "";
@@ -341,6 +360,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05DBCACD2FC87A64007B30E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+		05DBCADC2FC8805A007B30E3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05DBCACE2FC87A64007B30E3 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DBCACD2FC87A64007B30E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		05DBCAD02FC87A64007B30E3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DBCACD2FC87A64007B30E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		05DBCAD22FC87A64007B30E3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DBCACD2FC87A64007B30E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		05DBCADD2FC8805A007B30E3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DBCADC2FC8805A007B30E3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05DBCA882FC84F11007B30E3 /* Project object */;
 }
